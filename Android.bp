@@ -178,6 +178,18 @@ android_app_import {
 }
 
 android_app_import {
+	name: "ConnectivityThermalPowerManager",
+	owner: "google",
+	apk: "proprietary/system_ext/priv-app/ConnectivityThermalPowerManager/ConnectivityThermalPowerManager.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "EuiccGoogleOverlay",
 	owner: "google",
 	apk: "proprietary/system_ext/priv-app/EuiccGoogleOverlay/EuiccGoogleOverlay.apk",
@@ -242,6 +254,18 @@ android_app_import {
 	owner: "google",
 	apk: "proprietary/system_ext/priv-app/PixelNfc/PixelNfc.apk",
 	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "grilservice",
+	owner: "google",
+	apk: "proprietary/system_ext/priv-app/grilservice/grilservice.apk",
+	presigned: true,
 	dex_preopt: {
 		enabled: false,
 	},
@@ -459,6 +483,13 @@ dex_import {
 	name: "dpmapi",
 	owner: "google",
 	jars: ["proprietary/system_ext/framework/dpmapi.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "google-ril",
+	owner: "google",
+	jars: ["proprietary/system_ext/framework/google-ril.jar"],
 	system_ext_specific: true,
 }
 
