@@ -435,8 +435,6 @@ PRODUCT_PACKAGES += \
     ConnMO \
     DCMO \
     DMService \
-    DeviceIntelligenceNetworkPrebuilt \
-    DevicePersonalizationPrebuiltPixel2020 \
     DiagMon \
     EuiccGoogle \
     HardwareInfo \
